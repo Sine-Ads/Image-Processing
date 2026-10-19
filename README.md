@@ -1,2 +1,2 @@
 # Image-Processing
-This is a pure python image processor without using numpy or openCV
+This is a pure python image processor without using numpy or openCV . Only pure python will be used.
