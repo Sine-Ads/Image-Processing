@@ -38,40 +38,37 @@ A lightweight, dependency-free Python project that parses, processes, and export
 
 ### 1. Run the Pipeline
 
-Make sure Python is installed and navigate to the project directory. Execute the following command in your terminal:
+Execute `main.py` directly from your terminal:
 
 ```bash
 python main.py
 ```
 
-### 2. View the Output Files
+### 2. View Output Files
 
 Running `main.py` generates two processed PGM images in the project directory:
 
-- `output_thresholded.pgm` — A high-contrast, black-and-white image produced through thresholding.
-- `output_inverted.pgm` — A grayscale negative produced by inverting the original pixel intensities.
+- `output_thresholded.pgm` — High-contrast, black-and-white image produced through thresholding.
+- `output_inverted.pgm` — Grayscale negative image produced through inversion.
 
 ### 3. Convert Outputs to PNG (Optional)
 
-To convert the PGM files into PNG images for easier viewing in web browsers and image viewers, use ImageMagick:
+If you have ImageMagick installed, convert the PGM files to PNG format for easier viewing:
 
 ```bash
 magick output_thresholded.pgm output_thresholded.png
 magick output_inverted.pgm output_inverted.png
 ```
 
-You can then open the generated PNG files using any compatible image viewer.
+### 4. View the Converted Images
+
+Open the generated PNG files using any compatible image viewer:
+
+- `output_thresholded.png`
+- `output_inverted.png`
 
 ## Requirements
 
 - Python 3
-- ImageMagick (optional, only required for converting PGM outputs to PNG)
+- ImageMagick (optional, required only for converting PGM files to PNG)
 
-## Project Goals
-
-This project demonstrates the fundamentals of image processing and file handling in Python, including:
-
-- Parsing structured image file formats.
-- Working with 2D lists and matrix-based data.
-- Implementing basic image transformations using mathematical operations.
-- Reading and writing image files without external image processing libraries.
